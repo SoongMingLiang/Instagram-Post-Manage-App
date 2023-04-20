@@ -1,0 +1,24 @@
+#login {
+    min-width: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    font-family: Nunito;
+    font-size: 30px;
+    letter-spacing: 1px;
+    background-color: rgb(78, 210, 210);
+    color: black;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+#login:hover {
+    transition: 500ms;
+    background-color: rgb(102, 213, 152);
+    color: rgb(97, 95, 95);
+    transform: scale(1.125) perspective(1px);
+}
+
+#login:active {
+    opacity: 0.5;
+}
