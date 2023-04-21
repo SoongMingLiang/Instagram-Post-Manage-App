@@ -9,11 +9,11 @@
     background-color: rgb(78, 210, 210);
     color: black;
     font-weight: bold;
-    transition: 500ms;
+    transition: 200ms;
 }
 
 #logout:hover {
-    transition: 500ms;
+    transition: 200ms;
     background-color: crimson;
     color: white;
     transform: scale(1.125) perspective(1px);

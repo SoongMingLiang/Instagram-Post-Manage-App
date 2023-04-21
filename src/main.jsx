@@ -9,7 +9,7 @@ const domain = import.meta.env.VITE_AUTH0_DOMAIN
 const clientID = import.meta.env.VITE_AUTH0_CLIENT_ID
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  
     <BrowserRouter>
       <Auth0Provider
       domain={domain}
@@ -17,9 +17,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       authorizationParams={{
         redirect_uri: 'http://localhost:5173/dashboard'
       }}
+      useRefreshTokens={true}
+      cacheLocation='localstorage'
       >
         <App />
       </Auth0Provider>
     </BrowserRouter>
-  </React.StrictMode>,
+  
 )

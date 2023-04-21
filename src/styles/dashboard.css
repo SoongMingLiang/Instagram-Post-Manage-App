@@ -1,0 +1,54 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+#bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    z-index: 999;
+    padding: 0 1rem;
+    background-color: #565454;
+}
+
+#header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid cornflowerblue;
+    max-height: 10vh;
+    position: sticky;
+}
+
+#postList {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#postPreview {
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+#postPreview:hover {
+    transform: scale(1.125) perspective(1px);
+    background-color: #363535;
+}
+
+#postPreview p {
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#postPreview p:hover {
+    color: white;
+}
