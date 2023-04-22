@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       domain={domain}
       clientId={clientID}
       authorizationParams={{
-        redirect_uri: 'https://instagram-post-manage-app.vercel.app'
+        redirect_uri: 'https://instagram-post-manage-app.vercel.app/dashboard'
       }}
       useRefreshTokens={true}
       cacheLocation='localstorage'
