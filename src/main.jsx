@@ -7,6 +7,7 @@ import { Auth0Provider } from '@auth0/auth0-react'
 
 const domain = import.meta.env.VITE_AUTH0_DOMAIN
 const clientID = import.meta.env.VITE_AUTH0_CLIENT_ID
+const redirectUri = import.meta.env.VITE_REDIRECT_URI
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
@@ -15,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       domain={domain}
       clientId={clientID}
       authorizationParams={{
-        redirect_uri: 'http://localhost:5173/dashboard'
+        redirect_uri: redirectUri
       }}
       useRefreshTokens={true}
       cacheLocation='localstorage'
