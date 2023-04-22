@@ -1,0 +1,67 @@
+#postDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+#postDetails h2 {
+    font-family: Nunito;
+    font-size: 30px;
+}
+
+#backButton {
+    position: absolute;
+    top: 33px;
+    right: 40px;
+    font-family: Nunito;
+    font-size: 30px;
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: rgb(78, 210, 210);
+    color: black;
+    transition: 200ms;
+}
+
+#backButton:hover {
+    transition: 200ms;
+    background-color: rgb(102, 213, 152);
+    color: rgb(255, 255, 255);
+    transform: scale(1.125) perspective(1px);
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    align-items: flex-start;
+    font-family: Nunito;
+    font-size: 20px;
+}
+
+.content {
+    color: yellow;
+}
+
+#deleteButton {
+    min-width: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    font-family: Nunito;
+    font-size: 30px;
+    letter-spacing: 1px;
+    background-color: rgb(78, 210, 210);
+    color: black;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+#deleteButton:hover {
+    transition: 200ms;
+    background-color: crimson;
+    color: white;
+    transform: scale(1.125) perspective(1px);
+}
+
+#deleteButton:active {
+    opacity: 0.5;
+}

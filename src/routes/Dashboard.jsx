@@ -42,7 +42,7 @@ const Dashboard = () => {
         )
     }
 
-    return (isAuthenticated && (posts.length>0) &&
+    return (isAuthenticated && (posts.length >= 0) &&
         (<div className="dashboard">
             <div id="bar">
                 <div id="header">
