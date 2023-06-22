@@ -31,7 +31,7 @@ const PostDetails = () => {
             axios.delete(path)
                 .then(() => {
                     console.log('post deleted');
-                    // alert('post deleted');
+                    alert('post deleted');
                     navigate('/dashboard');
                 })
         }

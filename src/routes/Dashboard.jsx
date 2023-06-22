@@ -38,9 +38,9 @@ const Dashboard = () => {
         }
     `;
 
-    if(isLoading){
+    if(isLoading || setLoading){
         return (
-            <Loading />
+            <div><Loading /></div>
         )
     }
 
