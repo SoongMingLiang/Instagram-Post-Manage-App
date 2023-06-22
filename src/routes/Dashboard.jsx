@@ -20,7 +20,7 @@ const Dashboard = () => {
                 if(data){
                     setPosts(data);
                 }
-                setLoading(false)
+                // setLoading(false)
             })
             .catch((err) => console.log(err))
     }
