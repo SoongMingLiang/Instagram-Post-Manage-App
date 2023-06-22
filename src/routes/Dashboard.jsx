@@ -38,11 +38,11 @@ const Dashboard = () => {
         }
     `;
 
-    if(isLoading || setLoading){
-        return (
-            <div><Loading /></div>
-        )
-    }
+    // if(isLoading || Loading){
+    //     return (
+    //         <div><Loading /></div>
+    //     )
+    // }
 
     return (isAuthenticated && (posts.length >= 0) &&
         (<div className="dashboard">
