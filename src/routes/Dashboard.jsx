@@ -11,7 +11,7 @@ const Dashboard = () => {
     const API_SERVER = import.meta.env.VITE_API_SERVER;
     const {user, isAuthenticated, isLoading} = useAuth0();
     const [posts, setPosts] = useState([]);
-    const [Loading, setLoading] = useState(true);
+    const [LoadingPage, setLoadingPage] = useState(true);
 
     const getData = () => {
         axios.get(API_SERVER+'/post/')
@@ -20,7 +20,7 @@ const Dashboard = () => {
                 if(data){
                     setPosts(data);
                 }
-                // setLoading(false)
+                // setLoadingPage(false)
             })
             .catch((err) => console.log(err))
     }
@@ -38,7 +38,7 @@ const Dashboard = () => {
         }
     `;
 
-    if(isLoading || Loading){
+    if(isLoading || LoadingPage){
         return (
             <div><Loading /></div>
         )
